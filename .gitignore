@@ -1,0 +1,41 @@
+# Secrets and local configuration
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*secret*
+*token*
+
+# Private project records and generated artifacts
+inputs/
+outputs/
+reports/
+logs/
+*.log
+*.pdf
+*.dwg
+*.dxf
+*.docx
+*.docm
+*.xlsx
+*.xlsm
+*.xls
+*.csv
+*.zip
+*.7z
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.mov
+*.mp4
+
+# Local tooling
+node_modules/
+.venv/
+__pycache__/
+.DS_Store
+Thumbs.db
+
