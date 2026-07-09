@@ -1,6 +1,6 @@
 # Architecture
 
-This document describes the public architecture of the cut-on-site wall and conventional pitched roof framing material and build-list workflow. It intentionally omits production code, site data, source plans, generated workbooks, supplier exports, and internal paths.
+This document describes the public architecture of the cut-on-site wall and conventional pitched roof framing material and build-list workflow. The repository now includes sanitized source code, while still omitting site data, source plans, generated workbooks, supplier exports, and internal paths.
 
 ## System Boundary
 
@@ -31,15 +31,15 @@ flowchart LR
 
 | Component | Role | Public Repo Status |
 | --- | --- | --- |
-| Project assumptions | Captures stock length, bearing allowance, spacing, waste, and drawing revision fields | Described only |
-| PDF/DWG imports | Stage measured wall, bracing, and floor-area rows with source references | Described only |
-| Wall-frame breakdown | Identifies each wall frame, labels member groups, and separates plate, stud, lintel, opening, bracing, hold-down, and TBA items | Described only |
+| Project assumptions | Captures stock length, bearing allowance, spacing, waste, and drawing revision fields | Sanitized examples included |
+| PDF/DWG imports | Stage measured wall, bracing, and floor-area rows with source references | Schemas and converter scripts included |
+| Wall-frame breakdown | Identifies each wall frame, labels member groups, and separates plate, stud, lintel, opening, bracing, hold-down, and TBA items | Builder code included |
 | Wall-frame sketches | Provides synthetic diagrams for individual wall frames and construction sequence views | Included as showcase diagrams |
-| Opening schedule | Links openings to wall IDs and lintel calculations | Described only |
-| Conventional pitched roof schedule | Stages rafters, ridge, hips, valleys, ceiling joists, battens, bracing, tie-downs, and engineer-review items | Described only |
-| Workbook builder | Generates Excel sheets and formulas | Excluded |
-| Source manifests | Track hashes and source freshness for imports | Described only |
-| Verification checks | Confirm formulas, review status, manifests, exports, and TBA blockers | Described only |
+| Opening schedule | Links openings to wall IDs and lintel calculations | Extraction and cross-check scripts included |
+| Conventional pitched roof schedule | Stages rafters, ridge, hips, valleys, ceiling joists, battens, bracing, tie-downs, and engineer-review items | Builder code included |
+| Workbook builder | Generates Excel sheets and formulas | Sanitized source included under `workbook/` |
+| Source manifests | Track hashes and source freshness for imports | Helper code included |
+| Verification checks | Confirm formulas, review status, manifests, exports, and TBA blockers | Verification code included |
 | Supplier exports | Split ready lines and unresolved TBA items | Excluded |
 
 ## Output Model

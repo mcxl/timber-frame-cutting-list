@@ -1,0 +1,47 @@
+{
+  "project": "Sample Duplex",
+  "drawingRevision": "TBA - confirm from DWG title block",
+  "calibrationSource": "DWG model units; estimator must confirm before review",
+  "unitScaleToMm": null,
+  "rules": [
+    {
+      "idPrefix": "DWG-WALL-CANDIDATE",
+      "layerRegex": "(wall|framing|stud)",
+      "entityTypes": ["LINE", "LWPOLYLINE", "POLYLINE"],
+      "targetWorkbookSheet": "Wall Measurements",
+      "measurementType": "linear",
+      "tradeComponent": "External Wall",
+      "site": "TBA",
+      "level": "TBA",
+      "reviewStatus": "Needs Review",
+      "confidence": 0.45,
+      "notes": "Initial layer-name candidate only; confirm site, level, wall type, wall ID, and outside-to-outside measurement before marking Reviewed."
+    },
+    {
+      "idPrefix": "DWG-FLOOR-CANDIDATE",
+      "layerRegex": "(floor|joist|deck)",
+      "entityTypes": ["LWPOLYLINE", "POLYLINE"],
+      "targetWorkbookSheet": "Floor Framing",
+      "measurementType": "area",
+      "tradeComponent": "Floor Zone",
+      "site": "TBA",
+      "level": "TBA",
+      "reviewStatus": "Needs Review",
+      "confidence": 0.4,
+      "notes": "Closed-polyline area candidate only; confirm joist span direction and engineered member schedule before marking Reviewed."
+    },
+    {
+      "idPrefix": "DWG-BRACE-CANDIDATE",
+      "layerRegex": "(brace|bracing)",
+      "entityTypes": ["LINE", "LWPOLYLINE", "POLYLINE"],
+      "targetWorkbookSheet": "Wall Measurements",
+      "measurementType": "linear",
+      "tradeComponent": "Bracing Panel",
+      "site": "TBA",
+      "level": "TBA",
+      "reviewStatus": "Needs Review",
+      "confidence": 0.45,
+      "notes": "Bracing candidate only; AS 1684 bracing source and audit remain required."
+    }
+  ]
+}

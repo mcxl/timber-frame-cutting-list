@@ -1,0 +1,83 @@
+{
+  "project": "Sample Duplex",
+  "sourcePdf": "sample-architectural-plans.pdf",
+  "drawingRevision": "sample revision",
+  "calibrationSource": "OpenTakeoff calibrated dimension; confirm sheet scale before marking Reviewed",
+  "reviewer": "",
+  "reviewedDate": "",
+  "conditions": [
+    {
+      "conditionName": "External Wall GF Site A",
+      "targetWorkbookSheet": "Wall Measurements",
+      "measurementType": "linear",
+      "quantitySource": "lf",
+      "tradeComponent": "External Wall",
+      "site": "A",
+      "level": "Ground",
+      "wallId": "A-GF-EXT-01",
+      "wallType": "External",
+      "sheetNumber": "TBA",
+      "pageNumber": 1,
+      "reviewStatus": "Needs Review",
+      "notes": "Replace fixture wall ID/sheet/page after reviewed takeoff."
+    },
+    {
+      "conditionName": "Internal Wall GF Site A",
+      "targetWorkbookSheet": "Wall Measurements",
+      "measurementType": "linear",
+      "quantitySource": "lf",
+      "tradeComponent": "Internal Wall",
+      "site": "A",
+      "level": "Ground",
+      "wallId": "A-GF-INT-01",
+      "wallType": "Internal",
+      "sheetNumber": "TBA",
+      "pageNumber": 1,
+      "reviewStatus": "Needs Review",
+      "notes": "Replace fixture wall ID/sheet/page after reviewed takeoff."
+    },
+    {
+      "conditionName": "Floor Zone Site A First",
+      "targetWorkbookSheet": "Floor Framing",
+      "measurementType": "area",
+      "quantitySource": "total_sf",
+      "tradeComponent": "Floor Zone",
+      "site": "A",
+      "level": "First",
+      "zoneId": "A-FF-FLOOR-01",
+      "sheetNumber": "TBA",
+      "pageNumber": 1,
+      "reviewStatus": "Needs Review",
+      "notes": "Area-only import; joist span/direction still requires field or engineer input."
+    },
+    {
+      "conditionName": "Bracing Panel LM Site A",
+      "targetWorkbookSheet": "Wall Measurements",
+      "measurementType": "linear",
+      "quantitySource": "lf",
+      "tradeComponent": "Bracing Panel",
+      "site": "A",
+      "level": "Ground",
+      "wallId": "A-GF-BRACE-01",
+      "wallType": "External",
+      "sheetNumber": "TBA",
+      "pageNumber": 1,
+      "reviewStatus": "Needs Review",
+      "notes": "Maps to bracing source line; AS 1684 bracing review remains required."
+    },
+    {
+      "conditionName": "Opening Count Site A",
+      "targetWorkbookSheet": "Opening Schedule",
+      "measurementType": "count",
+      "quantitySource": "ea",
+      "tradeComponent": "Opening Count",
+      "site": "A",
+      "level": "Ground",
+      "openingId": "A-GF-OPENING-COUNT",
+      "sheetNumber": "TBA",
+      "pageNumber": 1,
+      "reviewStatus": "Needs Review",
+      "notes": "Count import is review support only; clear spans still come from schedule/field measurements."
+    }
+  ]
+}

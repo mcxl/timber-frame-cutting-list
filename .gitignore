@@ -32,6 +32,14 @@ logs/
 *.mov
 *.mp4
 
+# Public sample/demo assets that are safe to publish
+!prototypes/opentakeoff/demo/*.pdf
+!prototypes/opentakeoff/docs/img/*.png
+!prototypes/opentakeoff/web/public/*.png
+!prototypes/opentakeoff/web/public/demo/*.pdf
+!prototypes/opentakeoff/web/src/styles/tokens.css
+!research/pdf-plan-takeoff-repo-matrix.csv
+
 # Local tooling
 node_modules/
 .venv/

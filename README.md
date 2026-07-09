@@ -1,8 +1,8 @@
 # Cut on Site Wall and Roof Framing Material and Build List Public Showcase
 
-This repository is a sanitized GitHub Pages showcase for a cut-on-site wall and conventional pitched roof framing material and build-list workflow for Australian residential construction.
+This repository is a sanitized public code release for a cut-on-site wall and conventional pitched roof framing material and build-list workflow for Australian residential construction.
 
-It explains the workflow, outputs, quality checks, and privacy boundary without publishing real project plans, DWG/PDF source files, generated Excel workbooks, supplier exports, production scripts, or private git history.
+It includes the public implementation shape, pipeline scripts, workbook builder code, schema files, sample mappings, research notes, and an OpenTakeoff prototype. It does not publish real project plans, DWG/PDF source files, generated Excel workbooks, supplier exports, private records, credentials, or private git history.
 
 ## What It Does
 
@@ -23,7 +23,16 @@ The private project supports a site-ready framing workbook workflow:
 - supplier CSV exports and unresolved TBA tracking;
 - workbook verification before handoff.
 
-This public repo contains only a static showcase page, public documentation, and synthetic diagrams.
+This public repo contains a static showcase page, public documentation, synthetic diagrams, sanitized workbook/pipeline source, and source for the OpenTakeoff prototype used during PDF takeoff exploration.
+
+## Code Layout
+
+- `workbook/` contains the workbook builder, workbook verifier, and source-manifest helper.
+- `scripts/` contains PDF/DWG extraction, import conversion, source freshness, sequence generation, and measurement iteration helpers.
+- `schemas/` contains the PDF takeoff measurement import schema.
+- `examples/` contains sanitized mapping examples.
+- `research/` contains public research notes and comparison material.
+- `prototypes/opentakeoff/` contains the OpenTakeoff web/server prototype source. Its `node_modules` and built `dist` outputs are intentionally excluded.
 
 ## Who It Is For
 
@@ -54,13 +63,17 @@ Framing takeoff work benefits from repeatable calculations, source traceability,
 This public showcase deliberately excludes:
 
 - real site addresses, client details, drawing files, photos, PDFs, DWG/DXF files, ZIP files, and Excel workbooks;
-- production builder scripts, generated outputs, preview images, logs, and supplier CSV exports;
+- generated outputs, private preview images, logs, and supplier CSV exports;
 - `.env` files, credentials, API keys, service details, and deployment configuration;
 - private monorepo history or internal workspace paths.
 
 ## Current Status
 
-Public showcase only. The operational implementation and project records remain private.
+Public sanitized source release. The real project records and generated deliverables remain private.
+
+## License Notes
+
+The root framing-workflow code is released under the repository `LICENSE.md`. The `prototypes/opentakeoff/` subproject carries its own Apache-2.0 `LICENSE` and `NOTICE` files, which remain in that folder.
 
 See:
 

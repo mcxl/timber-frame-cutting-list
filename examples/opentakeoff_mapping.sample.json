@@ -1,0 +1,83 @@
+{
+  "project": "Sample Duplex",
+  "sourcePdf": "sample-architectural-plans.pdf",
+  "drawingRevision": "sample revision",
+  "calibrationSource": "Fixture only - replace with OpenTakeoff calibrated dimension before order use",
+  "reviewer": "Estimator",
+  "reviewedDate": "2026-07-08",
+  "conditions": [
+    {
+      "conditionName": "External Wall GF Site A",
+      "targetWorkbookSheet": "Wall Measurements",
+      "measurementType": "linear",
+      "quantitySource": "lf",
+      "tradeComponent": "External Wall",
+      "site": "A",
+      "level": "Ground",
+      "wallId": "A-GF-EXT-01",
+      "wallType": "External",
+      "sheetNumber": "A-03",
+      "pageNumber": 3,
+      "reviewStatus": "Reviewed",
+      "notes": "Fixture measurement for pipeline verification only."
+    },
+    {
+      "conditionName": "Internal Wall GF Site A",
+      "targetWorkbookSheet": "Wall Measurements",
+      "measurementType": "linear",
+      "quantitySource": "lf",
+      "tradeComponent": "Internal Wall",
+      "site": "A",
+      "level": "Ground",
+      "wallId": "A-GF-INT-01",
+      "wallType": "Internal",
+      "sheetNumber": "A-03",
+      "pageNumber": 3,
+      "reviewStatus": "Reviewed",
+      "notes": "Fixture measurement for pipeline verification only."
+    },
+    {
+      "conditionName": "Floor Zone Site A First",
+      "targetWorkbookSheet": "Floor Framing",
+      "measurementType": "area",
+      "quantitySource": "total_sf",
+      "tradeComponent": "Floor Zone",
+      "site": "A",
+      "level": "First",
+      "zoneId": "A-FF-FLOOR-01",
+      "sheetNumber": "A-07",
+      "pageNumber": 7,
+      "reviewStatus": "Reviewed",
+      "notes": "Area-only fixture; joist span remains TBA."
+    },
+    {
+      "conditionName": "Bracing Panel LM Site A",
+      "targetWorkbookSheet": "Wall Measurements",
+      "measurementType": "linear",
+      "quantitySource": "lf",
+      "tradeComponent": "Bracing Panel",
+      "site": "A",
+      "level": "Ground",
+      "wallId": "A-GF-BRACE-01",
+      "wallType": "External",
+      "sheetNumber": "S-03",
+      "pageNumber": 3,
+      "reviewStatus": "Reviewed",
+      "notes": "Fixture bracing measurement; AS 1684 bracing review remains required."
+    },
+    {
+      "conditionName": "Opening Count Site A",
+      "targetWorkbookSheet": "Opening Schedule",
+      "measurementType": "count",
+      "quantitySource": "ea",
+      "tradeComponent": "Opening Count",
+      "site": "A",
+      "level": "Ground",
+      "openingId": "A-GF-OPENING-COUNT",
+      "sheetNumber": "A-11",
+      "pageNumber": 11,
+      "reviewStatus": "Needs Review",
+      "notes": "Fixture count remains review-only."
+    }
+  ]
+}

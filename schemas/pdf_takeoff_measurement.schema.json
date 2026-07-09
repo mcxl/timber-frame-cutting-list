@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.codex/schemas/pdf_takeoff_measurement.schema.json",
+  "title": "PDF Takeoff Measurement Import",
+  "type": "object",
+  "required": ["project", "source", "measurements"],
+  "additionalProperties": false,
+  "properties": {
+    "project": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "object",
+      "required": ["system", "importedAt"],
+      "additionalProperties": false,
+        "properties": {
+        "system": { "type": "string" },
+        "importedAt": { "type": "string" },
+        "sourceFile": { "type": "string" },
+        "mappingFile": { "type": "string" },
+        "qaEvidence": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "measurements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "project",
+          "sourcePdf",
+          "pageNumber",
+          "sheetNumber",
+          "drawingRevision",
+          "calibrationSource",
+          "measurementType",
+          "tradeComponent",
+          "targetWorkbookSheet",
+          "site",
+          "level",
+          "value",
+          "unit",
+          "reviewStatus",
+          "sourceSystem"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "project": { "type": "string", "minLength": 1 },
+          "sourcePdf": { "type": "string", "minLength": 1 },
+          "pageNumber": { "type": "integer", "minimum": 1 },
+          "sheetNumber": { "type": "string", "minLength": 1 },
+          "drawingRevision": { "type": "string", "minLength": 1 },
+          "calibrationSource": { "type": "string", "minLength": 1 },
+          "measurementType": {
+            "type": "string",
+            "enum": ["linear", "area", "count", "engineering_reference", "opening", "note"]
+          },
+          "tradeComponent": { "type": "string", "minLength": 1 },
+          "targetWorkbookSheet": {
+            "type": "string",
+            "enum": ["Wall Measurements", "Floor Framing", "Opening Schedule", "Engineering Details Check", "AS 1684 Check Register"]
+          },
+          "site": { "type": "string", "enum": ["A", "B", "Shared", "TBA"] },
+          "level": { "type": "string", "enum": ["Ground", "First", "Roof", "TBA"] },
+          "wallId": { "type": "string" },
+          "zoneId": { "type": "string" },
+          "openingId": { "type": "string" },
+          "value": { "type": "number" },
+          "unit": { "type": "string", "enum": ["m", "mm", "m2", "ea", "text"] },
+          "valueMm": { "type": "number" },
+          "valueM": { "type": "number" },
+          "valueM2": { "type": "number" },
+          "sourceValue": { "type": "number" },
+          "sourceUnit": { "type": "string" },
+          "lengthMm": { "type": "number" },
+          "widthMm": { "type": "number" },
+          "joistSpanDirection": {
+            "type": "string",
+            "enum": ["Length", "Width", ""]
+          },
+          "joistSpanMm": { "type": "number" },
+          "joistSpacingMm": { "type": "number" },
+          "supportType": { "type": "string" },
+          "joistMember": { "type": "string" },
+          "reviewStatus": {
+            "type": "string",
+            "enum": ["Draft", "Needs Review", "Reviewed", "Rejected", "TBA / Engineer", "TBA"]
+          },
+          "reviewer": { "type": "string" },
+          "reviewedDate": { "type": "string" },
+          "sourceSystem": { "type": "string" },
+          "conditionName": { "type": "string" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}
