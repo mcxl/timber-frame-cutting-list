@@ -2,7 +2,7 @@
 
 ## Supported Content
 
-This repository contains public showcase documentation and static HTML only. It is not the operational timber-frame cutting-list workspace.
+This repository contains public showcase documentation and static HTML only. It is not the operational cut-on-site wall and conventional pitched roof framing material build-list workspace.
 
 ## Sensitive Material Policy
 
@@ -16,4 +16,3 @@ Do not commit:
 ## Reporting A Concern
 
 If you find sensitive material in this repo, open a GitHub security advisory if available. If not available, open an issue with a minimal description and do not paste secrets or personal information into the issue body.
-

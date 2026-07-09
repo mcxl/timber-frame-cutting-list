@@ -1,6 +1,6 @@
-# Timber Frame Cutting List Public Showcase
+# Cut on Site Wall and Roof Framing Material and Build List Public Showcase
 
-This repository is a sanitized GitHub Pages showcase for a timber-frame takeoff and cutting-list workflow for Australian residential construction.
+This repository is a sanitized GitHub Pages showcase for a cut-on-site wall and conventional pitched roof framing material and build-list workflow for Australian residential construction.
 
 It explains the workflow, outputs, quality checks, and privacy boundary without publishing real project plans, DWG/PDF source files, generated Excel workbooks, supplier exports, production scripts, or private git history.
 
@@ -11,6 +11,8 @@ The private project supports a site-ready framing workbook workflow:
 - staged PDF and DWG takeoff imports;
 - wall measurement schedules;
 - wall-linked opening schedules;
+- conventional pitched roof framing material schedules;
+- rafter, ridge, hip, valley, collar tie, ceiling joist, strut, hanging beam, and roof-batten review items;
 - LVL lintel cut calculations with bearing allowance;
 - stud, plate, noggin, bracing, floor, and sheet-material takeoffs;
 - AS 1684 and engineering review registers;
@@ -23,22 +25,23 @@ This public repo contains only a static showcase page, public documentation, and
 ## Who It Is For
 
 - residential estimators and carpentry teams;
-- builders preparing timber framing orders;
+- builders preparing wall and roof framing material orders;
 - engineers and consultants reviewing TBA items;
 - automation builders interested in auditable Excel workflows.
 
 ## Why It Exists
 
-Framing takeoff work benefits from repeatable calculations, source traceability, and clear review status. This showcase demonstrates the public shape of a workflow where imports remain staged until reviewed, workbook outputs expose unresolved blockers, and supplier exports are separated from TBA lines.
+Framing takeoff work benefits from repeatable calculations, source traceability, and clear review status. This showcase demonstrates the public shape of a workflow where wall and conventional pitched roof framing inputs remain staged until reviewed, workbook outputs expose unresolved blockers, and supplier exports are separated from TBA lines.
 
 ## Workflow
 
 1. Capture project assumptions and drawing revision details.
 2. Stage PDF/DWG takeoff rows with source references and review status.
 3. Link openings to wall IDs and calculate lintel, cripple-stud, and review flags.
-4. Generate workbook sheets for quantities, optimizer rows, QA checks, and supplier exports.
-5. Validate source manifests, formulas, AS 1684 audit fields, and unresolved TBA items.
-6. Hand off a private workbook and exports only after review.
+4. Stage conventional pitched roof details such as spans, pitch, overhangs, ridge/hip/valley members, rafter spacing, battens, tie-downs, and engineer TBA items.
+5. Generate workbook sheets for quantities, optimizer rows, QA checks, and supplier exports.
+6. Validate source manifests, formulas, AS 1684 audit fields, roof-detail review fields, and unresolved TBA items.
+7. Hand off a private workbook and exports only after review.
 
 ## Privacy Boundary
 
@@ -58,4 +61,3 @@ See:
 - [Architecture](docs/architecture.md)
 - [Demo Scenario](docs/demo-scenario.md)
 - [Security](SECURITY.md)
-
