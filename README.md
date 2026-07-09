@@ -11,6 +11,9 @@ The private project supports a site-ready framing workbook workflow:
 - staged PDF and DWG takeoff imports;
 - wall measurement schedules;
 - wall-linked opening schedules;
+- individual wall-frame identification, breakdown, and labelling;
+- synthetic wall-frame sketches and sequence diagrams;
+- construction sequencing for cutting, assembling, standing, plumbing, bracing, and checking wall frames;
 - conventional pitched roof framing material schedules;
 - rafter, ridge, hip, valley, collar tie, ceiling joist, strut, hanging beam, and roof-batten review items;
 - LVL lintel cut calculations with bearing allowance;
@@ -37,11 +40,14 @@ Framing takeoff work benefits from repeatable calculations, source traceability,
 
 1. Capture project assumptions and drawing revision details.
 2. Stage PDF/DWG takeoff rows with source references and review status.
-3. Link openings to wall IDs and calculate lintel, cripple-stud, and review flags.
-4. Stage conventional pitched roof details such as spans, pitch, overhangs, ridge/hip/valley members, rafter spacing, battens, tie-downs, and engineer TBA items.
-5. Generate workbook sheets for quantities, optimizer rows, QA checks, and supplier exports.
-6. Validate source manifests, formulas, AS 1684 audit fields, roof-detail review fields, and unresolved TBA items.
-7. Hand off a private workbook and exports only after review.
+3. Identify each wall frame by level, area, wall ID, wall type, source reference, and review state.
+4. Break wall frames down into plates, studs, noggins, lintels, trimmers, jamb studs, sill/support members, bracing panels, hold-downs, and opening-related members.
+5. Produce labelled frame sketches and construction-sequence diagrams for individual wall frames.
+6. Link openings to wall IDs and calculate lintel, cripple-stud, and review flags.
+7. Stage conventional pitched roof details such as spans, pitch, overhangs, ridge/hip/valley members, rafter spacing, battens, tie-downs, and engineer TBA items.
+8. Generate workbook sheets for quantities, optimizer rows, QA checks, and supplier exports.
+9. Validate source manifests, formulas, AS 1684 audit fields, roof-detail review fields, and unresolved TBA items.
+10. Hand off a private workbook and exports only after review.
 
 ## Privacy Boundary
 
@@ -60,4 +66,5 @@ See:
 
 - [Architecture](docs/architecture.md)
 - [Demo Scenario](docs/demo-scenario.md)
+- [Wall Frame Breakdown And Sequencing](docs/wall-frame-breakdown-and-sequencing.md)
 - [Security](SECURITY.md)

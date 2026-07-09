@@ -103,7 +103,7 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 16px;
     }
     .panel {
@@ -134,6 +134,9 @@
       .grid { grid-template-columns: 1fr; }
       h1 { font-size: 36px; }
     }
+    @media (min-width: 761px) and (max-width: 980px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+    }
     @media (max-width: 420px) {
       h1 { font-size: 32px; }
     }
@@ -149,6 +152,7 @@
         <div class="actions">
           <a class="button primary" href="docs/architecture.md">Architecture</a>
           <a class="button" href="docs/demo-scenario.md">Demo Scenario</a>
+          <a class="button" href="docs/wall-frame-breakdown-and-sequencing.md">Wall Frames</a>
           <a class="button" href="SECURITY.md">Security Boundary</a>
         </div>
       </section>
@@ -171,6 +175,17 @@
         <h2>Review Model</h2>
         <p>Unreviewed source rows stay staged and block order readiness. Reviewed rows can flow into calculated quantities and export lines.</p>
       </article>
+      <article class="panel">
+        <h2>Wall Frames</h2>
+        <p>Identifies, breaks down, labels, sketches, diagrams, and sequences individual wall frames from cut list through stand and brace checks.</p>
+      </article>
+    </section>
+    <section class="band">
+      <h2>Frame Breakdown</h2>
+      <p>The showcase covers labelled wall IDs, member groups, opening relationships, bracing and hold-down review items, and construction sequence steps for individual wall frames.</p>
+      <figure class="visual" aria-label="Synthetic labelled wall frame and construction sequence diagram">
+        <img src="assets/wall-frame-sequence.svg" alt="Synthetic labelled wall frame and construction sequence diagram">
+      </figure>
     </section>
     <section class="band">
       <h2>Privacy Boundary</h2>

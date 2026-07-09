@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="720" viewBox="0 0 1100 720" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic wall-frame breakdown and construction sequence</title>
+  <desc id="desc">A labelled synthetic wall frame with plates, studs, lintel, opening, noggins, bracing, and construction sequence steps.</desc>
+  <rect width="1100" height="720" fill="#f8fafc"/>
+  <rect x="50" y="52" width="1000" height="610" rx="8" fill="#ffffff" stroke="#d7dee8" stroke-width="2"/>
+  <text x="86" y="102" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#17202a">Individual wall-frame breakdown</text>
+  <text x="86" y="132" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#5d6978">Synthetic sketch. No real site dimensions, plans, or certified shop drawings.</text>
+
+  <g stroke="#17202a" stroke-width="8" fill="none" stroke-linecap="square">
+    <path d="M120 460 H610"/>
+    <path d="M120 210 H610"/>
+    <path d="M120 188 H610"/>
+    <path d="M130 210 V460"/>
+    <path d="M600 210 V460"/>
+    <path d="M200 210 V460"/>
+    <path d="M270 210 V460"/>
+    <path d="M520 210 V460"/>
+    <path d="M350 302 V460"/>
+    <path d="M450 302 V460"/>
+    <path d="M340 302 H460"/>
+    <path d="M340 288 H460"/>
+    <path d="M175 335 H300"/>
+    <path d="M490 335 H575"/>
+  </g>
+
+  <g stroke="#0b7285" stroke-width="5" fill="none">
+    <path d="M140 450 L300 225"/>
+    <path d="M300 225 L430 450"/>
+  </g>
+  <rect x="350" y="330" width="100" height="130" fill="#e6f7fa" stroke="#0b7285" stroke-width="3"/>
+  <rect x="150" y="372" width="76" height="70" fill="#fff4e6" stroke="#c56a11" stroke-width="3"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#17202a">
+    <text x="120" y="500" font-weight="700">GF-W07 demo wall frame</text>
+    <text x="120" y="526">Bottom/top plates, common studs, opening set, noggins, brace zone, hold-down review.</text>
+    <text x="610" y="190">double top plate</text>
+    <line x1="604" y1="190" x2="560" y2="190" stroke="#5d6978" stroke-width="2"/>
+    <text x="610" y="226">common studs</text>
+    <line x1="604" y1="222" x2="520" y2="250" stroke="#5d6978" stroke-width="2"/>
+    <text x="610" y="306">lintel and trimmers</text>
+    <line x1="604" y1="302" x2="460" y2="302" stroke="#5d6978" stroke-width="2"/>
+    <text x="610" y="340">noggin row</text>
+    <line x1="604" y1="336" x2="535" y2="335" stroke="#5d6978" stroke-width="2"/>
+    <text x="610" y="392">bracing zone</text>
+    <line x1="604" y1="388" x2="260" y2="335" stroke="#5d6978" stroke-width="2"/>
+    <text x="610" y="454">bottom plate</text>
+    <line x1="604" y1="450" x2="520" y2="460" stroke="#5d6978" stroke-width="2"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="740" y="190" font-size="22" font-weight="700" fill="#17202a">Construction sequence</text>
+    <g font-size="14" fill="#17202a">
+      <rect x="740" y="220" width="250" height="48" rx="8" fill="#e6f7fa" stroke="#0b7285" stroke-width="2"/>
+      <text x="762" y="250">1. Confirm wall ID and source ref</text>
+      <rect x="740" y="286" width="250" height="48" rx="8" fill="#fff4e6" stroke="#c56a11" stroke-width="2"/>
+      <text x="762" y="316">2. Mark plates and member labels</text>
+      <rect x="740" y="352" width="250" height="48" rx="8" fill="#edf2ff" stroke="#4263eb" stroke-width="2"/>
+      <text x="762" y="382">3. Cut studs, lintels, noggins</text>
+      <rect x="740" y="418" width="250" height="48" rx="8" fill="#f1f3f5" stroke="#495057" stroke-width="2"/>
+      <text x="762" y="448">4. Assemble, square, brace flat</text>
+      <rect x="740" y="484" width="250" height="48" rx="8" fill="#ebfbee" stroke="#2b8a3e" stroke-width="2"/>
+      <text x="762" y="514">5. Stand, plumb, brace, QA</text>
+    </g>
+  </g>
+</svg>

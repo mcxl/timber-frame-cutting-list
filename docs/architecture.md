@@ -8,6 +8,7 @@ The private workflow treats measurement imports as staged evidence:
 
 - PDF and DWG takeoff data can be normalized into import records;
 - import records are not trusted until reviewed;
+- each wall frame can be identified, labelled, decomposed into member groups, and sequenced for construction;
 - conventional pitched roof details can be staged for review before order quantities are treated as ready;
 - source manifests record file hashes, tools, and run metadata;
 - workbook sheets calculate quantities and expose blockers;
@@ -32,6 +33,8 @@ flowchart LR
 | --- | --- | --- |
 | Project assumptions | Captures stock length, bearing allowance, spacing, waste, and drawing revision fields | Described only |
 | PDF/DWG imports | Stage measured wall, bracing, and floor-area rows with source references | Described only |
+| Wall-frame breakdown | Identifies each wall frame, labels member groups, and separates plate, stud, lintel, opening, bracing, hold-down, and TBA items | Described only |
+| Wall-frame sketches | Provides synthetic diagrams for individual wall frames and construction sequence views | Included as showcase diagrams |
 | Opening schedule | Links openings to wall IDs and lintel calculations | Described only |
 | Conventional pitched roof schedule | Stages rafters, ridge, hips, valleys, ceiling joists, battens, bracing, tie-downs, and engineer-review items | Described only |
 | Workbook builder | Generates Excel sheets and formulas | Excluded |
@@ -46,6 +49,8 @@ The private workbook can include:
 - Inputs and assumptions;
 - PDF/DWG takeoff staging;
 - wall measurements;
+- individual wall-frame breakdown and labelling;
+- wall-frame sketch and construction-sequence references;
 - opening schedule and opening schedule check;
 - conventional pitched roof framing schedule;
 - LVL cutting optimizer;
@@ -63,6 +68,9 @@ The private workbook can include:
 ## Design Principles
 
 - Reviewed import rows can affect quantities; unreviewed rows remain blockers.
+- Each wall frame must retain its source reference, wall ID, label set, review status, and unresolved TBA items.
+- Frame sketches are explanatory aids, not certified shop drawings.
+- Construction sequencing is a planning aid for cut, assembly, stand, brace, and check steps.
 - Lintel cuts include clear span plus total bearing allowance.
 - Conventional pitched roof quantities stay review-gated where pitch, bearing, birdsmouth/notching, overhangs, tie-downs, bracing, or engineering details are unresolved.
 - Over-stock and missing-span items remain visible as TBA or special order.
